@@ -13,4 +13,7 @@ export class MovieImple{
     getMovieByName(title:string){
         return this.movies.filter((movie)=>movie.title==title)
     }
+    getMovieByDescription(description:string){
+        return this.movies.filter((movie)=>movie.description==description)
+    }
 }
