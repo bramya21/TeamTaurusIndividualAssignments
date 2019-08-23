@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var movie_implementaion_1 = require("./movie.implementaion");
+var movie_model_1 = require("./movie.model");
+var mv;
+var movieObject = new movie_model_1.Movie(1, "a hero never dies", "fantasy...", "fox");
+mv = [movieObject];
+console.log(movieObject.title);
+var mvImp = new movie_implementaion_1.MovieImple(mv);
+// mvImp.setMovie(movieObject);
+console.log(mvImp.getMovies()[0]);
+console.log(mvImp.getMovieByName("a hero never dies"));
