@@ -4,13 +4,13 @@ class Movie
 public hero:String="Rajini";
 
 }
-class Movie1 extends Movie{
+class MovieDesc extends Movie{
 public director:String="shankar";
 public movie:String="Robo";
 }
 var mv = new Movie();
 console.log(mv.hero);
 
-var mv1 = new Movie1();
+var mv1 = new MovieDesc();
 console.log(mv1.movie);
 console.log(mv1.director);
