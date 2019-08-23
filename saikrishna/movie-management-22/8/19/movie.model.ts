@@ -1,6 +1,6 @@
 export class Movie{
    constructor(id,title,description,production){
-      this.id = id;
+      this.id = id
       this.description = description
       this.production = production
       this.title = title
