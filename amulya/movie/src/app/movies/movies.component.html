@@ -1,0 +1,43 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Distribution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies" >
+        <th>{{movie.id}}</th>
+        <td>{{movie.title}}</td>
+        <td>{{movie.description}}</td>
+        <td>{{movie.distribution}}</td>
+        <td><button class="btn btn-danger" (click)="delete(movie)">Delete</button></td>
+      </tr>
+    </tbody>
+    </table>
+    <hr/>
+    <div class="form-group col-sm-2">
+      <label for="title">Id</label>
+      <input type="number" class="form-control" id="title" placeholder="Movie Id"[(ngModel)]="id">
+    </div>
+    <div class="form-group col-sm-2">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Movie Name"[(ngModel)]="title">
+      </div>
+    <div class="form-group col-sm-2">
+        <label for="title">Description</label>
+        <input type="text" class="form-control" id="title" placeholder="Movie Description" [(ngModel)]="description">
+    </div>
+    <div class="form-group col-sm-2">
+        
+        <label for="title">Destribution</label>
+        <input type="text" class="form-control" id="title" placeholder="Movie Destribution" [(ngModel)]="Destribution">
+        
+        
+    </div>
+    <br/>
+    <button  class="btn btn-primary button" (click)="addMovie()">Add</button>
+    
+
