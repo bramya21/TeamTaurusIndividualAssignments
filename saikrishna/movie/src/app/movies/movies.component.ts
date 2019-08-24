@@ -40,5 +40,8 @@ distribution:string
   getMovieByTitle(title:string){
 
   }
+  delete(movie:Movie){
+    this.movies = this.movies.filter(m=>m.id!=movie.id)
+  }
 
 }

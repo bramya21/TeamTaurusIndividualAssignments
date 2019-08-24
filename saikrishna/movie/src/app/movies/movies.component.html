@@ -13,6 +13,7 @@
         <td>{{movie.title}}</td>
         <td>{{movie.description}}</td>
         <td>{{movie.distribution}}</td>
+        <td><button class="btn btn-danger" (click)="delete(movie)">Delete</button></td>
       </tr>
     </tbody>
     </table>
@@ -34,5 +35,5 @@
         <input type="text" class="form-control" id="title" placeholder="Movie Destribution" [(ngModel)]="Destribution">
     </div>
     
-    <button  class="btn btn-primary" (click)="addMovie()">Submit</button>
+    <button  class="btn btn-primary" (click)="addMovie()">Add</button>
 
